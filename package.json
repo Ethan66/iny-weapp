@@ -1,6 +1,6 @@
 {
   "name": "iny-weapp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "iny 基础组件",
   "miniprogram": "dist",
   "scripts": {
@@ -12,7 +12,7 @@
     "docs": "npx cross-env NODE_ENV=production webpack --config build/webpack.doc.prd.js",
     "lint": "eslint ./packages --ext .js",
     "release": "sh ./build/release.sh",
-    "publish": "npm run build && npm publish --access public --registry=https://registry.npmjs.org"
+    "pub": "npm run build && npm publish --access public --registry=https://registry.npmjs.org"
   },
   "files": [
     "dist"
