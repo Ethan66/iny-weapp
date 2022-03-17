@@ -1,0 +1,19 @@
+.popup {
+  padding: 100px 30px;
+}
+.right, .left {
+  height: 100%;
+  width: 50%;
+}
+.bottom {
+  height: 400px;
+}
+
+.top {
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0;
+  line-height: 20px;
+  background-color: rgba(0, 0, 0, 0.8)!important;
+}

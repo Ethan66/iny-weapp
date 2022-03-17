@@ -1,0 +1,41 @@
+<view
+ class="custom-class iny-cell {{ isLink || clickable ? 'iny-cell--clickable' : ''}} {{ border ? 'iny-cell--border' : ''}}"
+ hover-class="iny-cell--hover hover-class"
+ hover-stay-time="70"
+ style="{{ customStyle }}"
+ bind:tap="onClick"
+>
+	<iny-icon
+	 wx:if="{{ icon }}"
+	 name="{{ icon }}"
+	 class="iny-cell__left-icon-wrap"
+	 custom-class="iny-cell__left-icon"
+	/>
+	<slot wx:else name="icon" />
+
+	<view class="iny-cell__title title-class">
+		<block wx:if="{{ title }}">{{ title }}</block>
+		<slot wx:else name="title" />
+
+		<view wx:if="{{ label }}" class="iny-cell__label label-class">
+			<block>{{ label }}</block>
+		</view>
+		<slot wx:else name="label" />
+	</view>
+
+	<view class="value-class iny-cell__value">
+		<block wx:if="{{ value || value == 0 }}">{{ value }}</block>
+		<slot wx:else />
+	</view>
+
+	<iny-icon
+	 wx:if="{{ isLink }}"
+	 name="right"
+	 class="iny-cell__right-icon-wrap right-icon-class"
+	 custom-class="iny-cell__right-icon"
+	/>
+
+	<slot name="right-icon" />
+</view>
+
+

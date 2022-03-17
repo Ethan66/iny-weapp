@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "iny-mask": "../mask/index",
+    "iny-icon": "../icon/index"
+  }
+}

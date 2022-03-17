@@ -1,0 +1,164 @@
+<view class="block">
+	<view class="title">简单使用</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="1"
+	 size="large"
+	 round="{{false}}"
+	>简单使用
+	</iny-button>
+</view>
+<iny-action-sheet
+ visible="{{visible1}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+<view class="block">
+	<view class="title">使用标题</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="2"
+	 size="large"
+	 round="{{false}}"
+	>使用标题
+	</iny-button>
+</view>
+<iny-action-sheet
+ title="使用标题"
+ visible="{{visible2}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+<view class="block">
+	<view class="title">使用圆角</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="3"
+	 size="large"
+	 round="{{false}}"
+	>使用圆角
+	</iny-button>
+</view>
+<iny-action-sheet
+ round
+ visible="{{visible3}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+<view class="block">
+	<view class="title">多选框</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="4"
+	 size="large"
+	 round="{{false}}"
+	>多选框
+	</iny-button>
+</view>
+<iny-action-sheet
+ visible-checkbox
+ checkbox="{{checkboxValue}}"
+ align='left'
+ visible="{{visible4}}"
+ actions="{{actions}}"
+ bind:change="onChange"
+ bind:confirm="onConfirm"
+/>
+
+<view class="block">
+	<view class="title">多选框自定义选择数量</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="5"
+	 size="large"
+	 round="{{false}}"
+	>多选框
+	</iny-button>
+</view>
+<iny-action-sheet
+ visible-checkbox
+ max="1"
+ checkbox="{{checkboxValue}}"
+ align='left'
+ footer-text="取消"
+ visible="{{visible5}}"
+ actions="{{actions}}"
+ bind:change="onChange"
+ bind:confirm="onConfirm"
+/>
+<view class="block">
+	<view class="title">自定义最小高度</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="6"
+	 size="large"
+	 round="{{false}}"
+	>自定义最小高度
+	</iny-button>
+</view>
+<iny-action-sheet
+ align='left'
+ min-height="500px"
+ visible="{{visible6}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+<view class="block">
+	<view class="title">是否有蒙层</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="7"
+	 size="large"
+	 round="{{false}}"
+	>是否有蒙层
+	</iny-button>
+</view>
+<iny-action-sheet
+ align='left'
+ mask="{{false}}"
+ visible="{{visible7}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+<view class="block">
+	<view class="title">点击蒙层是否自动关闭</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="8"
+	 size="large"
+	 round="{{false}}"
+	>点击蒙层是否自动关闭
+	</iny-button>
+</view>
+<iny-action-sheet
+ align='left'
+ close-on-click-mask="{{false}}"
+ visible="{{visible8}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+<view class="block">
+	<view class="title">点击选项或底部确定按钮是否自动关闭</view>
+	<iny-button
+	 bind:click="onClick"
+	 data-index="9"
+	 size="large"
+	 round="{{false}}"
+	> 点击蒙层是否自动关闭
+	</iny-button>
+</view>
+<iny-action-sheet
+ align='left'
+ close-on-click-action="{{false}}"
+ visible="{{visible9}}"
+ actions="{{actions}}"
+ bind:select="onSelect"
+/>
+
+

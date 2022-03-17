@@ -1,0 +1,59 @@
+<view class="block">
+	<view class="title">Transition</view>
+</view>
+
+<iny-cell
+ title="Fade"
+ bind:click="onClickFade"
+ is-link
+/>
+<iny-cell
+ title="Fade Up"
+ bind:click="onClickFadeUp"
+ is-link
+/>
+<iny-cell
+ title="Fade Down"
+ bind:click="onClickFadeDown"
+ is-link
+/>
+<iny-cell
+ title="Fade Left"
+ bind:click="onClickFadeLeft"
+ is-link
+/>
+<iny-cell
+ title="Fade Right"
+ bind:click="onClickFadeRight"
+ is-link
+/>
+<iny-cell
+ title="Slide Up"
+ bind:click="onClickSlideUp"
+ is-link
+/>
+<iny-cell
+ title="Slide Down"
+ bind:click="onClickSlideDown"
+ is-link
+/>
+<iny-cell
+ title="Slide Left"
+ bind:click="onClickSlideLeft"
+ is-link
+/>
+<iny-cell
+ title="Slide Right"
+ bind:click="onClickSlideRight"
+ is-link
+ border="{{ false }}"
+/>
+
+<iny-transition
+ visible="{{ visible }}"
+ name="{{ name }}"
+ custom-class="demo"
+ duration="{{duration}}"
+/>
+
+

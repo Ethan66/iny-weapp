@@ -1,0 +1,52 @@
+<view class="block">
+	<view class="title">简单使用</view>
+</view>
+
+<iny-notice-bar
+ bind:click="onClick"
+ left-icon="horn"
+ text="做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人"
+/>
+
+<view class="block">
+	<view class="title">右边按钮</view>
+</view>
+
+<iny-notice-bar
+ bind:click="onClick"
+ right-icon="close"
+ text="做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人"
+/>
+
+<view class="block">
+	<view class="title">禁止滚动</view>
+</view>
+
+<iny-notice-bar
+ bind:click="onClick"
+ right-icon="close"
+ left-icon="horn"
+ scrollable="{{false}}"
+ text="做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人"
+/>
+
+<view class="block">
+	<view class="title">多行展示</view>
+</view>
+
+<iny-notice-bar
+ scrollable="{{false}}"
+ wrapable
+ text="做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人 做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人 "
+/>
+
+<view class="block">
+	<view class="title">左右插槽</view>
+</view>
+
+<iny-notice-bar text="做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人 做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人 ">
+	<view slot="left-icon">公告</view>
+	<view slot="right-icon">结束</view>
+</iny-notice-bar>
+
+

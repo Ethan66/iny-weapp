@@ -1,0 +1,31 @@
+<view class="custom-class iny-rate">
+	<view
+	 class="iny-rate__item"
+	 wx:for="{{count}}"
+	 wx:key="{{index}}"
+	 style="margin-right: {{gutter}}; font-size: {{size}}"
+	>
+		<iny-icon
+		 name="{{index + 1 <= value ? icon : voidIcon}}"
+		 size="{{size}}"
+		 data-rate="{{index}}"
+		 custom-class="icon-class"
+		 color="{{ disabled ? disabledColor : index + 1 <= value ? color : voidColor}}"
+		 class="iny-rate__icon"
+		 bind:click="onClick"
+		/>
+
+		<iny-icon
+		 wx:if="{{allowHalf}}"
+		 name="{{index + 0.5 <= value ? icon : voidIcon}}"
+		 size="{{size}}"
+		 data-rate="{{index- 0.5}}"
+		 custom-class="icon-class"
+		 color="{{ disabled ? disabledColor : index + 0.5 <= value ? color : voidColor}}"
+		 class="iny-rate__icon iny-rate__icon--half"
+		 bind:click="onClick"
+		/>
+	</view>
+</view>
+
+

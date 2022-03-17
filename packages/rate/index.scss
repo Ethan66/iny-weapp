@@ -1,0 +1,21 @@
+@import '../common/styles/var.scss';
+
+
+.iny-rate {
+  display: flex;
+  user-select: none;
+  &__item {
+    position: relative;
+  }
+
+  &__icon {
+
+    &--half {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.5em;
+      overflow: hidden;
+    }
+  }
+}

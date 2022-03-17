@@ -1,0 +1,18 @@
+function isHttpImage (url) {
+  return url.indexOf('http') === 0 || url.indexOf('data:image') === 0 || url.indexOf('//') === 0
+}
+
+function isLinearArray (value) {
+  return !(value && value.constructor === 'Array' && value[0] && value[0].constructor === 'Array')
+}
+
+function isNumber (value) {
+  value *= 1
+  return typeof value === 'number' && !isNaN(value)
+}
+
+module.exports = {
+  isHttpImage: isHttpImage,
+  isLinearArray: isLinearArray,
+  isNumber: isNumber
+}

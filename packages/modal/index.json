@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "iny-pop": "../popup/index",
+    "iny-button": "../button/index"
+  }
+}

@@ -1,0 +1,17 @@
+<view class="custom-class iny-radio" bindtap="toggle">
+	<view class="iny-radio__icon-wrap">
+		<iny-icon
+		 name="{{icon}}"
+		 size="14px"
+		 custom-class="icon-class"
+		 custom-style="line-height: 16px;"
+		 style="{{ checkedColor && value === name && !disabled ? 'border-color:' + checkedColor + '; background-color:' + checkedColor : '' }}"
+		 class="iny-radio__icon {{ value === name ? 'iny-radio__icon--checked' : ''}} {{ disabled ? 'iny-radio__icon--disabled' : ''}} {{ round ? 'iny-radio__icon--round' : ''}}"
+		/>
+	</view>
+	<view class="iny-radio__label label-class">
+		<slot/>
+	</view>
+</view>
+
+

@@ -1,0 +1,17 @@
+<view class="custom-class iny-checkbox" bindtap="toggle">
+	<view class="iny-checkbox__icon-wrap">
+		<iny-icon
+		 name="{{icon}}"
+		 size="{{size}}px"
+		 custom-class="icon-class"
+		 custom-style="line-height: 16px;"
+		 style="{{ checkedColor && value && !disabled ? 'border-color:' + checkedColor + '; background-color:' + checkedColor : '' }}"
+		 class="iny-checkbox__icon {{ value ? 'iny-checkbox__icon--checked' : ''}} {{ disabled ? 'iny-checkbox__icon--disabled' : ''}} {{ round ? 'iny-checkbox__icon--round' : ''}}"
+		/>
+	</view>
+	<view class="iny-checkbox__label label-class">
+		<slot/>
+	</view>
+</view>
+
+

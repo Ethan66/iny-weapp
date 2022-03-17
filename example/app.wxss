@@ -1,0 +1,31 @@
+@import './dist/common/index.wxss';
+
+page {
+  background: #efefef;
+}
+.divide {
+  margin: 20px 0;
+}
+.block {
+  margin: 20rpx;
+}
+.title {
+  padding: 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+.padding {
+  padding: 15px;
+}
+
+.wrap {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.pannel {
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #242424;
+}

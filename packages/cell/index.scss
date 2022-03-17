@@ -1,0 +1,79 @@
+@import '../common/styles/var.scss';
+@import '../common/styles/mixin.scss';
+
+.iny-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 13px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-title;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  &--border {
+    &::after {
+      @include hairline-bottom($color-border, 13px);
+    }
+  }
+  
+  &-group {
+    background-color: #fff;
+  }
+
+  &__value, &__label {
+    overflow: hidden;
+    color: $color-desc;
+    text-align: right;
+    vertical-align: middle;
+  }
+
+  &__title,
+  &__value {
+    flex: 1;
+  }
+
+  &__label {
+    margin-left: 15px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left-icon-wrap,
+  &__right-icon-wrap {
+    display: flex;
+    height: 24px;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  &__left-icon-wrap {
+    margin-right: 5px;
+  }
+
+  &__right-icon-wrap {
+    margin-left: 5px;
+    color: $color-title;
+    color: $color-desc;
+  }
+
+  &__left-icon {
+    line-height: 24px;
+    vertical-align: middle;
+  }
+
+  &__right-icon {
+    line-height: 24px;
+  }
+
+  &--clickable {
+    &.iny-cell--hover {
+      background-color: $color-active;
+    }
+  }
+}

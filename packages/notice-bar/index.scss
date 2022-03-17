@@ -1,0 +1,48 @@
+@import '../common/index.scss';
+
+.iny-notice-bar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &--with-icon {
+    position: relative;
+    padding-right: 40px;
+  }
+  &--wrapable {
+    padding: 8px 15px;
+    height: auto;
+    .iny-notice-bar__wrap {
+      height: auto;
+      overflow: auto;
+    }
+  }
+
+  &__left-icon {
+    margin-right: 5px;
+  }
+
+  &__right-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-weight: 600;
+  }
+  
+  &__wrap {
+    position: relative;
+    flex: 1;
+    height: 20px;
+    overflow: hidden;
+  }
+  &__content {
+    &--scroll {
+      position: absolute;
+      white-space: nowrap;
+    }
+  }
+}

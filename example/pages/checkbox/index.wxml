@@ -1,0 +1,99 @@
+<view class="block">
+	<view class="title">简单使用</view>
+	<iny-checkbox value="{{checkbox}}" bind:change="onChange">简单使用</iny-checkbox>
+</view>
+<view class="block">
+	<view class="title">方形复选框</view>
+	<iny-checkbox
+	 round="{{false}}"
+	 value="{{checkbox}}"
+	 bind:change="onChange"
+	>方形复选框
+	</iny-checkbox>
+</view>
+<view class="block">
+	<view class="title">禁用状态</view>
+	<iny-checkbox
+	 value="{{checkbox1}}"
+	 bind:change="onChange1"
+	 custom-class="demo-checkbox"
+	>切换禁用状态
+	</iny-checkbox>
+	<iny-checkbox
+	 value="{{false}}"
+	 disabled="{{disabled}}"
+	 custom-class="demo-checkbox"
+	>禁用状态
+	</iny-checkbox>
+	<iny-checkbox
+	 value="{{true}}"
+	 disabled="{{disabled}}"
+	 custom-class="demo-checkbox"
+	>禁用状态
+	</iny-checkbox>
+</view>
+<view class="block">
+	<view class="title">自定义颜色</view>
+	<iny-checkbox
+	 checked-color="#2db7f5"
+	 value="{{checkbox2}}"
+	 bind:change="onChange2"
+	 custom-class="demo-checkbox"
+	>自定义颜色
+	</iny-checkbox>
+</view>
+<view class="block">
+	<view class="title">自定义图标</view>
+	<iny-checkbox
+	 icon="cart"
+	 value="{{checkbox2}}"
+	 bind:change="onChange2"
+	 custom-class="demo-checkbox"
+	>自定义图标
+	</iny-checkbox>
+</view>
+<view class="block">
+	<view class="title">复选框组</view>
+	<iny-checkbox-group value="{{checkboxGroup}}" bind:change="onGroupChange">
+		<iny-checkbox
+		 wx:for="{{checkboxList}}"
+		 wx:key="{{item}}"
+		 name="{{item}}"
+		 custom-class="demo-checkbox"
+		>复选框组{{item}}
+		</iny-checkbox>
+	</iny-checkbox-group>
+</view>
+<view class="block">
+	<view class="title">设置最大可选数</view>
+	<iny-checkbox-group
+	 max="2"
+	 value="{{checkboxGroup}}"
+	 bind:change="onGroupChange"
+	>
+		<iny-checkbox
+		 wx:for="{{checkboxList}}"
+		 wx:key="{{item}}"
+		 name="{{item}}"
+		 custom-class="demo-checkbox"
+		>复选框组{{item}}
+		</iny-checkbox>
+	</iny-checkbox-group>
+</view>
+
+<view class="block">
+	<view class="title">搭配单元格使用</view>
+</view>
+<iny-checkbox-group value="{{checkboxGroup}}" bind:change="onGroupChange">
+	<iny-cell-group border>
+		<iny-cell
+		 wx:for="{{checkboxList}}"
+		 wx:key="{{item}}"
+		 title="{{item}}"
+		>
+			<iny-checkbox custom-class="cell-value-class" name="{{item}}" />
+		</iny-cell>
+	</iny-cell-group>
+</iny-checkbox-group>
+
+

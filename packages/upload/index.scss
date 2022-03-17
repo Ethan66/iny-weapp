@@ -1,0 +1,51 @@
+@import '../common/styles/var.scss';
+
+.iny-upload {
+  position: relative;
+  display: inline-block;
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__preview {
+    position: relative;
+    margin: 0 8px 8px 0;
+
+    &-image {
+      display: block;
+      border-radius: 5px;
+    }
+
+    &-delete {
+      position: absolute;
+      right: -6px;
+      top: -6px;
+      z-index: 1;
+      opacity: 0.8;
+    }
+  }
+
+  &__upload {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px dashed $color-desc;
+    border-radius: 5px;
+
+    &-icon {
+      display: inline-block;
+      color: $color-desc;
+    }
+
+    &-text {
+      color: $color-desc;
+      font-size: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,4 @@
+.count-to {
+  font-size: 18px;
+  color: red;
+}

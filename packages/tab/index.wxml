@@ -1,0 +1,9 @@
+<view
+ wx:if="{{animated || inited}}"
+ class="custom-class iny-tab__pane {{ active ? 'iny-tab__pane--active' : ''}} {{inactive ? 'iny-tab__pane--inactive' : ''}}"
+ style="{{ animated || active ? '' : 'display: none;' }} {{ width ? 'width:' + width + 'px;' : '' }}"
+>
+	<slot/>
+</view>
+
+

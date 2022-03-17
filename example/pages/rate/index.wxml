@@ -1,0 +1,64 @@
+<view class="block">
+	<view class="title">简单使用</view>
+	<iny-rate value="{{rate}}" bind:change="onChange" />
+</view>
+
+<view class="block">
+	<view class="title">半星rate</view>
+	<iny-rate
+	 value="{{rate}}"
+	 allow-half
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义图标</view>
+	<iny-rate
+	 value="{{rate}}"
+	 icon="like-f"
+	 void-icon="like"
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义颜色</view>
+	<iny-rate
+	 value="{{rate}}"
+	 icon="like-f"
+	 color="yellow"
+	 void-color="blue"
+	 void-icon="like"
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义数量</view>
+	<iny-rate
+	 value="{{rate}}"
+	 count="8"
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">禁用状态</view>
+	<iny-rate
+	 value="3.5"
+	 disabled
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">只读状态</view>
+	<iny-rate
+	 value="3"
+	 readonly
+	 bind:change="onChange"
+	/>
+</view>
+
+

@@ -1,0 +1,47 @@
+<view class="custom-class iny-tabs iny-tabs--{{type}}">
+	<view style="z-index: {{zIndex}}; {{wrapStyle}}" class="iny-tabs__wrap {{scrollable ? 'iny-tabs__wrap--scrollable' : ''}} {{ type === 'line' && border ? 'iny-hairline--top-bottom' : '' }}">
+		<slot name="nav-left" />
+
+		<scroll-view
+		 scroll-x="{{scrollable}}"
+		 scroll-left="{{scrollLeft}}"
+		 scroll-with-animation
+		 class="iny-tabs__scroll--{{type}}"
+		 style="{{ color ? 'border-color: ' + color : '' }}"
+		>
+			<view class="iny-tabs__nav iny-tabs__nav--{{type}} nav-class">
+				<view
+				 wx:if="{{type === 'line'}}"
+				 class="iny-tabs__line"
+				 style="{{lineStyle}}"
+				/>
+				<view
+				 wx:for="{{tabs}}"
+				 wx:key="{{index}}"
+				 data-index="{{index}}"
+				 class="iny-tabs__title tab-class {{ index === currentIndex ? 'tab-active-class iny-tabs__title--active' : '' }} {{ item.disabled ? 'iny-tabs__title--disabled' : ''}}"
+				 style="{{ color && index !== currentIndex && type === 'card' && !item.disabled ? 'color: ' + color : '' }} {{ color && index === currentIndex && type === 'card' ? ';background-color:' + color : '' }} {{ color ? ';border-color: ' + color : '' }} {{ scrollable ? ';flex-basis:' + (88 / swipeThreshold) + '%' : '' }}"
+				 bind:tap="onTap"
+				>
+					<view class="iny-no-wrap">{{item.title}}</view>
+				</view>
+			</view>
+		</scroll-view>
+
+		<slot name="nav-right" />
+	</view>
+
+	<view
+	 class="iny-tabs__content"
+	 bind:touchstart="onTouchStart"
+	 bind:touchmove="onTouchMove"
+	 bind:touchend="onTouchEnd"
+	 bind:touchcancel="onTouchEnd"
+	>
+		<view class="iny-tabs__track track-class" style="{{ trackStyle }}">
+			<slot/>
+		</view>
+	</view>
+</view>
+
+

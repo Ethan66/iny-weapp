@@ -1,0 +1,77 @@
+<iny-pop
+ custom-class="iny-modal"
+ visible="{{visible}}"
+ z-index="{{zIndex}}"
+ transition="{{transition}}"
+ close-on-click-mask="{{closeOnClickMask}}"
+ bind:close="onClose"
+>
+	<view wx:if="{{title}}" class="iny-modal__header">{{title}}
+	</view>
+
+	<view class="iny-modal__text iny-modal__text--{{align}} {{title ? '' : 'iny-modal__text--no-title'}}">{{text}}
+	</view>
+	<slot/>
+
+	<view class="iny-modal__footer iny-hairline--top">
+		<iny-button
+		 wx:if="{{ cancel }}"
+		 class="iny-modal__button iny-hairline--right"
+		 custom-class="iny-modal__cancel"
+		 open-type="{{cancelOpenType}}"
+		 type="{{cancelType}}"
+		 lang="{{ lang }}"
+		 size="large"
+		 business-id="{{ businessId }}"
+		 session-from="{{ sessionFrom }}"
+		 send-message-title="{{ sendMessageTitle }}"
+		 send-message-path="{{ sendMessagePath }}"
+		 send-message-img="{{ sendMessageImg }}"
+		 show-message-card="{{ showMessageCard }}"
+		 app-parameter="{{ appParameter }}"
+		 aria-label="{{ ariaLabel }}"
+		 bind:openType="onCancelOpenType"
+		 bind:click="onButtonCancel"
+		 bind:getuserinfo="bindGetUserInfo"
+		 bind:contact="bindContact"
+		 bind:getphonenumber="bindGetPhoneNumber"
+		 bind:error="bindError"
+		 bind:launchapp="bindLaunchApp"
+		 bind:opensetting="bindOpenSetting"
+		 round="{{false}}"
+		>
+			{{ cancelText }}
+		</iny-button>
+		<iny-button
+		 wx:if="{{ confirm }}"
+		 round="{{false}}"
+		 size="large"
+		 class="iny-modal__button"
+		 custom-class="iny-modal__confirm"
+		 type="{{confirmType}}"
+		 open-type="{{confirmOpenType}}"
+		 lang="{{ lang }}"
+		 business-id="{{ businessId }}"
+		 session-from="{{ sessionFrom }}"
+		 send-message-title="{{ sendMessageTitle }}"
+		 send-message-path="{{ sendMessagePath }}"
+		 send-message-img="{{ sendMessageImg }}"
+		 show-message-card="{{ showMessageCard }}"
+		 app-parameter="{{ appParameter }}"
+		 aria-label="{{ ariaLabel }}"
+		 bind:click="onButtonConfirm"
+		 bind:openType="onConfirmOpenType"
+		 bind:getuserinfo="bindGetUserInfo"
+		 bind:contact="bindContact"
+		 bind:getphonenumber="bindGetPhoneNumber"
+		 bind:error="bindError"
+		 bind:launchapp="bindLaunchApp"
+		 bind:opensetting="bindOpenSetting"
+		>
+			{{ confirmText}}
+		</iny-button>
+	</view>
+
+</iny-pop>
+
+

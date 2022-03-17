@@ -1,0 +1,123 @@
+<view class="block">
+	<view class="title">简单使用</view>
+</view>
+<iny-tabs active='{{ 2 }}'>
+	<iny-tab
+	 title="标签 {{index + 1}}"
+	 wx:for="{{4}}"
+	 wx:key="{{index}}"
+	>
+		<view class="content">内容{{ index + 1}}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">名称匹配</view>
+</view>
+
+<iny-tabs active='{{ actveName }}'>
+	<iny-tab
+	 title="{{item.title}}"
+	 wx:for="{{tabs}}"
+	 wx:key="{{index}}"
+	 name="{{item.name}}"
+	 disabled="{{item.disabled}}"
+	>
+		<view class="content">内容{{ item.title }}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">超出滚动</view>
+</view>
+<iny-tabs active='{{ 2 }}'>
+	<iny-tab
+	 title="标签{{index + 1}}"
+	 name='{{index + 1}}'
+	 wx:for="{{8}}"
+	 wx:key="{{index}}"
+	>
+		<view class="content">内容{{index + 1}}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">样式风格</view>
+</view>
+<iny-tabs active='{{ 1 }}' type='card'>
+	<iny-tab
+	 title="标签 {{index + 1}}"
+	 wx:for="{{3}}"
+	 wx:key="{{index}}"
+	>
+		<view class="content">内容{{ index + 1}}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">点击事件</view>
+</view>
+<iny-tabs
+ active='{{ actveName }}'
+ bind:click="onClick"
+ bind:disabled-click="onDisabledClick"
+>
+	<iny-tab
+	 title="{{item.title}}"
+	 wx:for="{{tabs}}"
+	 wx:key="{{index}}"
+	 name="{{item.name}}"
+	 disabled="{{item.disabled}}"
+	>
+		<view class="content">内容{{ item.title }}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">切换动画</view>
+</view>
+
+<iny-tabs active='{{ 1 }}' animated>
+	<iny-tab
+	 title="标签 {{index + 1}}"
+	 wx:for="{{3}}"
+	 wx:key="{{index}}"
+	>
+		<view class="content">内容{{ index + 1}}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">滑动切换</view>
+</view>
+
+<iny-tabs active='{{ 1 }}' swipeable>
+	<iny-tab
+	 title="标签 {{index + 1}}"
+	 wx:for="{{3}}"
+	 wx:key="{{index}}"
+	>
+		<view class="content">内容{{ index + 1}}</view>
+	</iny-tab>
+</iny-tabs>
+
+<view class="block">
+	<view class="title">滑动切换动画</view>
+</view>
+
+<iny-tabs
+ active='2'
+ animated
+ swipeable
+>
+	<iny-tab
+	 title="标签{{index + 1}}"
+	 name='{{index + 1}}'
+	 wx:for="{{8}}"
+	 wx:key="{{index}}"
+	>
+		<view class="content" style="color: #fff; background-color: rgb({{(index + 1) * 30}}, 0, 0)">内容{{index + 1}}</view>
+	</iny-tab>
+</iny-tabs>
+
+

@@ -1,0 +1,7 @@
+.demo-checkbox {
+  margin: 10px 0;
+}
+.cell-value-class {
+  display: flex;
+  justify-content: flex-end;
+}

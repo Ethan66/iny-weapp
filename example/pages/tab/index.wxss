@@ -1,0 +1,7 @@
+.demo-checkbox {
+  margin: 10px 0;
+}
+.content {
+  padding: 80px;
+  background-color: #fff;
+}

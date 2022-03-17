@@ -1,0 +1,89 @@
+<view class="block">
+	<view class="title">简单使用</view>
+	<iny-radio-group value="{{radio}}" bind:change="onChange">
+		<iny-radio name="A" custom-class="iny-radio">A
+		</iny-radio>
+		<iny-radio name="B" custom-class="iny-radio">B
+		</iny-radio>
+	</iny-radio-group>
+</view>
+<view class="block">
+	<view class="title">方形单选框</view>
+	<iny-radio-group value="{{radio}}" bind:change="onChange">
+		<iny-radio
+		 name="A"
+		 round="{{false}}"
+		 custom-class="iny-radio"
+		>A
+		</iny-radio>
+		<iny-radio
+		 name="B"
+		 round="{{false}}"
+		 custom-class="iny-radio"
+		>B
+		</iny-radio>
+	</iny-radio-group>
+</view>
+<view class="block">
+	<view class="title">禁用状态</view>
+	<iny-radio-group
+	 value="{{radio}}"
+	 disabled
+	 bind:change="onChange"
+	>
+		<iny-radio name="A" custom-class="iny-radio">A
+		</iny-radio>
+		<iny-radio name="B" custom-class="iny-radio">B
+		</iny-radio>
+	</iny-radio-group>
+</view>
+<view class="block">
+	<view class="title">自定义颜色</view>
+	<iny-radio-group value="{{radio}}" bind:change="onChange">
+		<iny-radio
+		 name="A"
+		 checked-color="#2db7f5"
+		 custom-class="iny-radio"
+		>A
+		</iny-radio>
+		<iny-radio
+		 name="B"
+		 checked-color="#2db7f5"
+		 custom-class="iny-radio"
+		>B
+		</iny-radio>
+	</iny-radio-group>
+</view>
+<view class="block">
+	<view class="title">自定义图标</view>
+	<iny-radio-group value="{{radio}}" bind:change="onChange">
+		<iny-radio
+		 name="A"
+		 icon="cart"
+		 custom-class="iny-radio"
+		>A
+		</iny-radio>
+		<iny-radio
+		 name="B"
+		 icon="cart"
+		 custom-class="iny-radio"
+		>B
+		</iny-radio>
+	</iny-radio-group>
+</view>
+<view class="block">
+	<view class="title">搭配单元格使用</view>
+</view>
+<iny-radio-group value="{{radio}}" bind:change="onGroupChange">
+	<iny-cell-group border>
+		<iny-cell
+		 wx:for="{{radioList}}"
+		 wx:key="{{item}}"
+		 title="{{item}}"
+		>
+			<iny-radio custom-class="cell-value-class" name="{{item}}" />
+		</iny-cell>
+	</iny-cell-group>
+</iny-radio-group>
+
+

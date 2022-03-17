@@ -1,0 +1,49 @@
+<view class="block">
+	<view class="title">基础用法</view>
+	<iny-button
+	 bind:click="onBaseClick"
+	 size="large"
+	 round="{{false}}"
+	>文字提示
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">状态通知</view>
+	<iny-button
+	 type="info"
+	 bind:click="onSuccess"
+	 inline
+	 round="{{false}}"
+	>成功通知
+	</iny-button>
+	<iny-button
+	 type="theme"
+	 bind:click="onFail"
+	 inline
+	 round="{{false}}"
+	>失败通知
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">加载中</view>
+	<iny-button
+	 bind:click="onLoadingClick"
+	 size="large"
+	 round="{{false}}"
+	>加载中
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">高级使用</view>
+	<iny-button
+	 bind:click="onHighClick"
+	 size="large"
+	 round="{{false}}"
+	>高级使用
+	</iny-button>
+</view>
+
+

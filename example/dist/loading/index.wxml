@@ -1,0 +1,12 @@
+<view class="custom-class iny-loading" style="width: {{size}}px; height: {{size}}px;">
+	<view class="iny-inner iny-inner--{{type}}" style="color: {{color}};">
+		<view
+		 wx:if="{{type === 'spinner'}}"
+		 wx:for="item in 12"
+		 wx:key="index"
+		 class="iny-spinner--item iny-spinner--{{index}}"
+		/>
+	</view>
+</view>
+
+

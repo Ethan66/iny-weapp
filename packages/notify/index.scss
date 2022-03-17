@@ -1,0 +1,38 @@
+
+@import '../common/styles/var.scss';
+
+.iny-notify {
+  text-align: center;
+  word-wrap: break-word;
+  padding: $notify-padding;
+  font-size: $notify-font-size;
+  line-height: $notify-line-height;
+  
+  &__container {
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &__safe-area {
+    height: constant(safe-area-inset-top);
+    height: env(safe-area-inset-top);
+  }
+
+  &--info {
+    background-color: $notify-info-background-color;
+  }
+
+  &--success {
+    background-color: $notify-success-background-color;
+  }
+
+  &--danger {
+    background-color: $notify-danger-background-color;
+  }
+
+  &--warning {
+    background-color: $notify-warning-background-color;
+  }
+}

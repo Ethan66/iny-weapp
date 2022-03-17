@@ -1,0 +1,143 @@
+<view class="block">
+	<view class="title">按钮类型</view>
+	<view class="wrap">
+		<iny-tag>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="theme">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="success">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="theme-sub">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="warning">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="danger">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="blank">新人首单</iny-tag>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">空心按钮</view>
+	<view class="wrap">
+		<iny-tag type="theme" plain>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="theme-sub" plain>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="success" plain>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="warning" plain>新人首单</iny-tag>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">方形标签</view>
+	<view class="wrap">
+		<iny-tag
+		 type="theme"
+		 plain
+		 round="{{false}}"
+		>新人首单
+		</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag
+		 type="theme-sub"
+		 plain
+		 round="{{false}}"
+		>新人首单
+		</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag
+		 type="success"
+		 plain
+		 round="{{false}}"
+		>新人首单
+		</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag
+		 type="warning"
+		 plain
+		 round="{{false}}"
+		>新人首单
+		</iny-tag>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">标记标签</view>
+	<view class="wrap">
+		<iny-tag type="theme" mark>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="theme-sub" mark>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="success" mark>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="warning" mark>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="danger" mark>新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="blank" mark>新人首单</iny-tag>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">自定义大小</view>
+	<view class="wrap">
+		<iny-tag type="theme" size="20px">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag type="theme" size="10px">新人首单</iny-tag>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">自定义颜色</view>
+	<view class="wrap">
+		<iny-tag type="theme" color="blue">新人首单</iny-tag>
+	</view>
+	<view class="wrap">
+		<iny-tag
+		 type="theme"
+		 color="blue"
+		 plain
+		>新人首单
+		</iny-tag>
+	</view>
+
+	<view class="wrap">
+		<iny-tag
+		 type="theme"
+		 color="blue"
+		 mark
+		>新人首单
+		</iny-tag>
+	</view>
+
+	<view class="wrap">
+		<iny-tag
+		 color="#FFF1D6"
+		 text-color="#FF531F"
+		 size="10px"
+		>用红包再省49.99元
+		</iny-tag>
+	</view>
+</view>
+
+

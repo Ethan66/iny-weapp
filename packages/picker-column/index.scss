@@ -1,0 +1,21 @@
+@import '../common/styles/var.scss';
+
+.iny-picker-column  {
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+  color: $color-text;
+
+  &__item {
+    padding: 0 5px;
+
+    &--active {
+      font-weight: 500;
+      color: $color-title;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "iny-picker-column": "../picker-column/index",
+    "iny-loading": "../loading/index"
+  }
+}

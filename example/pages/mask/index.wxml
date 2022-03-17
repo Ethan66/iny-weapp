@@ -1,0 +1,35 @@
+<view class="block">
+	<view class="title">Mask</view>
+</view>
+<iny-cell
+ title="普通蒙层"
+ bind:click="onNormalClick"
+ is-link
+ border
+/>
+<iny-cell
+ title="透明蒙层"
+ bind:click="onClick"
+ is-link
+ border
+/>
+<iny-cell
+ title="自定义背景颜色"
+ bind:click="onSelfColorClick"
+ is-link
+ border
+/>
+<iny-cell
+ title="自定义层级"
+ bind:click="onSelfIndexClick"
+ is-link
+/>
+<iny-mask
+ visible="{{ visible }}"
+ mask="{{mask}}"
+ color="{{color}}"
+ z-index="{{zIndex}}"
+ bind:click="onMaskClick"
+/>
+
+

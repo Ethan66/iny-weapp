@@ -1,0 +1,1 @@
+.iny-swipe-cell{position:relative;overflow:hidden}.iny-swipe-cell__left,.iny-swipe-cell__right{position:absolute;top:0;height:100%}.iny-swipe-cell__left{left:0;transform:translate3d(-100%,0,0)}.iny-swipe-cell__right{right:0;transform:translate3d(100%,0,0)}

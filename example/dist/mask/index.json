@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "iny-transition": "../transition/index"
+  }
+}

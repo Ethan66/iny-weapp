@@ -1,0 +1,43 @@
+<wxs src="../wxs/utils.wxs" module="utils" />
+
+<view class="iny-picker custom-class">
+	<view wx:if="{{ showBar }}" class="iny-picker__bar iny-hairline--top-bottom bar-class">
+		<view
+		 class="iny-picker__cancel"
+		 hover-class="iny-picker__cancel--hover"
+		 hover-stay-time="70"
+		 bindtap="onCancel"
+		>
+			{{ cancelText }}
+		</view>
+		<view wx:if="{{title}}" class="iny-picker__title"> {{ title }}
+		</view>
+		<view
+		 class="iny-picker__confirm"
+		 hover-stay-time="70"
+		 hover-class="iny-picker__confirm--hover"
+		 bindtap="onConfirm"
+		>{{ confirmText }}
+		</view>
+	</view>
+	<view class="iny-picker__loading" wx:if="{{loading}}">
+		<iny-loading type='spinner' />
+	</view>
+	<view class="iny-picker__columns" catch:touchmove="noop">
+		<iny-picker-column
+		 class="iny-picker__column"
+		 wx:for="{{utils.isLinearArray(columns) ? [columns] : columns}}"
+		 list="{{item}}"
+		 wx:key="{{index}}"
+		 custom-class="column-class"
+		 active-class="active-class"
+		 value-key="{{valueKey}}"
+		 column-height="{{columnHeight}}"
+		 visible-column-count="{{visibleColumnCount}}"
+		 bind:change="onChange"
+		/>
+		<view class="iny-picker__frame iny-hairline--top-bottom" style="height: {{columnHeight}}px" />
+	</view>
+</view>
+
+

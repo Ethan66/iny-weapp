@@ -1,0 +1,74 @@
+<view class="block">
+	<view class="title">基础用法</view>
+	<iny-countdown timestamp="{{43200000}}" />
+</view>
+
+<view class="block">
+	<view class="title">自定义格式化</view>
+	<iny-countdown timestamp="{{43200000}}" formater="DD天HH时mm分ss秒" />
+</view>
+
+<view class="block">
+	<view class="title">毫秒级渲染</view>
+	<iny-countdown timestamp="{{43200000}}" mill />
+</view>
+
+<view class="block">
+	<view class="title">倒计时结束通知</view>
+	<iny-countdown timestamp="{{11200}}" bind:finish="finished" />
+</view>
+
+<view class="block">
+	<view class="title">超过不显示24小时不显示 (3600ms后显示)</view>
+	<iny-countdown
+	 item-class="item-class"
+	 max="{{24}}"
+	 timestamp="{{86403600}}"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义样式</view>
+	<iny-countdown
+	 item-class="item-class"
+	 separator-class="separator-class"
+	 timestamp="{{43200000}}"
+	 mill
+	/>
+</view>
+
+<view class="block">
+	<view class="title">手动控制</view>
+	<view class="padding">
+		<iny-countdown
+		 class="control-count-down"
+		 item-class="item-class"
+		 timestamp="{{43200000}}"
+		 auto-start="{{false}}"
+		 mill
+		/>
+	</view>
+	<iny-button
+	 type="theme"
+	 size="small"
+	 inline
+	 bind:click="start"
+	>开始
+	</iny-button>
+	<iny-button
+	 type="info"
+	 size="small"
+	 inline
+	 bind:click="pause"
+	>暂停
+	</iny-button>
+	<iny-button
+	 type="success"
+	 size="small"
+	 inline
+	 bind:click="reset"
+	>重置
+	</iny-button>
+</view>
+
+

@@ -1,0 +1,5 @@
+<view class="iny-count-to custom-class">
+	{{ value }}
+</view>
+
+

@@ -1,0 +1,65 @@
+@import '../common/index.scss';
+
+.iny-picker  {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  user-select: none;
+  
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    line-height: 44px;
+  }
+
+  &__cancel,
+  &__confirm {
+    padding: 0 15px;
+    font-size: 14px;
+    color: $color-theme;
+
+    &--hover {
+      background-color: $color-active;
+    }
+  }
+
+  &__title {
+    max-width: 70%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__columns {
+    display: flex;
+    position: relative;
+  }
+
+  &__column {
+    flex: 1;
+  }
+
+  &__loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__frame {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+}

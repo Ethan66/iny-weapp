@@ -1,0 +1,119 @@
+<view class="block">
+	<view class="title">Popup</view>
+</view>
+<iny-cell
+ title="基础用法"
+ bind:click="onNormalClick"
+ is-link
+ border
+/>
+
+<iny-pop
+ visible="{{ visible }}"
+ position="center"
+ bind:click-mask="onMaskClick"
+ bind:close="closePop"
+>
+	<view class="popup">普通popup</view>
+</iny-pop>
+
+<iny-cell
+ title="头部弹出"
+ bind:click="onTopPop"
+ is-link
+ border
+/>
+
+<iny-pop
+ custom-class="top"
+ visible="{{ topVisible }}"
+ position="top"
+ bind:close="closePop"
+/>
+
+<iny-cell
+ title="底部弹出"
+ bind:click="onBottomPop"
+ is-link
+ border
+/>
+
+<iny-pop
+ custom-class="bottom"
+ visible="{{ bottomVisible }}"
+ position="bottom"
+ bind:close="closePop"
+/>
+
+<iny-cell
+ title="左边弹出"
+ bind:click="onLeftPop"
+ is-link
+ border
+/>
+
+<iny-pop
+ custom-class="left"
+ visible="{{ leftVisible }}"
+ position="left"
+ bind:close="closePop"
+/>
+
+<iny-cell
+ title="右边弹出"
+ bind:click="onRightPop"
+ is-link
+/>
+
+<iny-pop
+ custom-class='right'
+ visible="{{ rightVisible }}"
+ position="right"
+ bind:close="closePop"
+/>
+
+<iny-cell
+ title="圆角弹出"
+ bind:click="onRoundPop"
+ is-link
+/>
+
+<iny-pop
+ custom-class="bottom"
+ round
+ visible="{{ roundVisible }}"
+ position="bottom"
+ bind:close="closePop"
+/>
+
+<iny-cell
+ title="关闭按钮弹窗弹出"
+ bind:click="onClosePop"
+ is-link
+/>
+
+<iny-pop
+ custom-class="bottom"
+ closeable
+ visible="{{ closeVisible }}"
+ position="bottom"
+ bind:close="closePop"
+/>
+
+<iny-cell
+ title="自定义关闭按钮弹窗弹出"
+ bind:click="onSelfClosePop"
+ is-link
+ border="{{ false }}"
+/>
+
+<iny-pop
+ custom-class="bottom"
+ closeable
+ visible="{{ selfCloseVisible }}"
+ icon="right"
+ position="bottom"
+ bind:close="closePop"
+/>
+
+

@@ -1,0 +1,54 @@
+<view class="block">
+	<view class="title">简单使用</view>
+</view>
+
+<iny-swipe-cell
+ right-width="{{ 65 }}"
+ left-width="{{ 65 }}"
+ bind:click="onClick"
+>
+	<view slot="left" class="left">选择
+	</view>
+	<iny-cell-group>
+		<iny-cell title="单元格" value="内容" />
+	</iny-cell-group>
+
+	<view slot="right" class="right">删除
+	</view>
+</iny-swipe-cell>
+
+<view class="block">
+	<view class="title">单边按钮</view>
+</view>
+
+<iny-swipe-cell right-width="{{ 130 }}">
+	<iny-cell-group>
+		<iny-cell title="单元格" value="内容" />
+	</iny-cell-group>
+	<view slot="right" class="right2">
+		<view class="btn add">添加</view>
+		<view class="btn">删除</view>
+	</view>
+</iny-swipe-cell>
+
+<view class="block">
+	<view class="title">异步关闭</view>
+</view>
+
+<iny-swipe-cell
+ right-width="{{ 65 }}"
+ left-width="{{ 65 }}"
+ async
+ bind:close="onClose"
+>
+	<view slot="left" class="left">选择
+	</view>
+	<iny-cell-group>
+		<iny-cell title="单元格" value="内容" />
+	</iny-cell-group>
+
+	<view slot="right" class="right">删除
+	</view>
+</iny-swipe-cell>
+
+

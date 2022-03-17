@@ -1,0 +1,43 @@
+@import '../common/index.scss';
+
+.iny-collapse-item {
+  &__title {
+    .iny-cell__right-icon {
+      transition: transform 0.3s;
+      transform: rotate(90deg);
+    }
+
+    &--expanded {
+      .iny-cell__right-icon {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &--disabled {
+      .iny-cell,
+      .iny-cell__right-icon {
+        color: $color-disabled-text !important;
+      }
+
+      .iny-cell--hover {
+        background: #fff !important;
+      }
+    }
+  }
+
+  &__wrap {
+    overflow: hidden;
+
+    &--transition {
+      transition: height 300ms ease-in-out;
+    }
+  }
+
+  &__content {
+    padding: 15px;
+    color: $color-text;
+    font-size: $font-text;
+    line-height: 1.5;
+    background-color: #fff;
+  }
+}

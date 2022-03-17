@@ -1,0 +1,91 @@
+<view class="block">
+	<view class="title">消息提醒</view>
+	<iny-button
+	 bind:click="onMessage"
+	 size="large"
+	 round="{{false}}"
+	>消息提醒
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">确认弹窗</view>
+	<iny-button
+	 bind:click="onConfirm"
+	 size="large"
+	 round="{{false}}"
+	>确认弹窗
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">自定义关闭函数</view>
+	<iny-button
+	 bind:click="closeFunc"
+	 size="large"
+	 round="{{false}}"
+	>自定义关闭函数
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">异步关闭 </view>
+	<iny-button
+	 bind:click="asyncClose"
+	 size="large"
+	 round="{{false}}"
+	>异步关闭
+	</iny-button>
+</view>
+
+<iny-modal id="iny-modal" bind:getPhoneNumber="onGetUserPhone" />
+
+<view class="block">
+	<view class="title">组件调用 </view>
+	<iny-button
+	 bind:click="selfClick"
+	 size="large"
+	 round="{{false}}"
+	>组件调用
+	</iny-button>
+</view>
+<iny-modal
+ visible="{{visible}}"
+ title="组件调用"
+ text="左边跟我画条龙，右边跟我画条虫"
+ bind:close="onClose"
+ bind:confirm="selfConfirm"
+ bind:cancel="selfCancel"
+/>
+
+<view class="block">
+	<view class="title">组件调用，自定义</view>
+	<iny-button
+	 bind:click="onClick2"
+	 size="large"
+	 round="{{false}}"
+	>组件调用，自定义
+	</iny-button>
+</view>
+
+<iny-modal
+ visible="{{visible2}}"
+ title="自定义"
+ bind:close="onClose"
+ bind:confirm="selfConfirm"
+ bind:cancel="selfCancel"
+>
+	<image src="https://fx.inyoumall.com/admin/goods/picture/2019-10-11/a9b6c4f2b8edaa10.jpeg" />
+</iny-modal>
+
+<view class="block">
+	<view class="title">授权弹窗</view>
+	<iny-button
+	 bind:click="authClick"
+	 size="large"
+	 round="{{false}}"
+	>授权弹窗
+	</iny-button>
+</view>
+
+

@@ -1,0 +1,92 @@
+// 主题色
+$color-theme: #ff2650;
+$color-theme-sub: rgba(255,38,80, 0.5);
+$color-divide: #f5f5f5;
+$color-border: #eee;
+$color-danger: #f44;
+$color-info:  #2db7f5;
+$color-success: #0EB53F;
+$color-warning: #ff8b00;
+$color-disabled: #e0e0e0;
+$color-disabled-text: #c9c9c9;
+$color-blank: #333;
+$color-dark-blank: #01000f;
+
+// 颜色值
+$color-title: #333;
+$color-text: #999999;
+$color-desc: #a2a4a6;
+$color-gray: #646566;
+$color-theme-text: #fff;
+$color-active: #f2f3f5;
+$color-button-text: #fff;
+
+// mask 默认背景色
+$color-mask: rgba(0, 0,0, .8);
+
+// iphoneX 安全区域
+$safe-area-bottom: 34px;
+$safe-area-top: 44px;
+
+// font
+$font-title: 16px;
+$font-sub-title: 14px;
+$font-toast: 15px;
+$font-desc: 12px;
+$font-text: 12px;
+$font-small: 10px;
+$font-btn-large: 30rpx;
+$font-btn-small: 12px;
+
+// radius
+$btn-radius: 32px;
+
+// index
+$index-modal: 100;
+$index-mask: 99;
+
+
+// checkbox
+$checkbox-size: 18px;
+$checkbox-border-color: #e5e5e5;
+$checkbox-transition-duration: .1s;
+$checkbox-label-margin: 10px;
+$checkbox-label-color: $color-gray;
+$checkbox-checked-icon-color: $color-theme;
+$checkbox-disabled-icon-color: $color-disabled-text;
+$checkbox-disabled-label-color: $color-disabled;
+$checkbox-disabled-background-color: $color-disabled;
+
+// radio
+$radio-size: 20px;
+$radio-border-color: #e5e5e5;
+$radio-transition-duration: .2s;
+$radio-label-margin: 10px;
+$radio-label-color: $color-gray;
+$radio-checked-icon-color: $color-theme;
+$radio-disabled-icon-color: $color-disabled-text;
+$radio-disabled-label-color: $color-disabled;
+$radio-disabled-background-color: $color-disabled;
+
+// Switch
+$switch-width: 2em;
+$switch-height: 1em;
+$switch-node-size: 1em;
+$switch-node-z-index: 1;
+$switch-node-background-color: #fff;
+$switch-node-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, .05), 0 2px 2px 0 rgba(0, 0, 0, .1), 0 3px 3px 0 rgba(0, 0, 0, .05);
+$switch-background-color: #fff;
+$switch-on-background-color: $color-theme;
+$switch-transition-duration: .3s;
+$switch-disabled-opacity: .4;
+$switch-border: 1px solid rgba(0, 0, 0, .1);
+
+
+// Notify
+$notify-padding: 6px 15px;
+$notify-font-size: 14px;
+$notify-line-height: 20px;
+$notify-info-background-color: $color-info;
+$notify-success-background-color: $color-success;
+$notify-danger-background-color: $color-danger;
+$notify-warning-background-color: $color-warning;

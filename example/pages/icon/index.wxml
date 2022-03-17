@@ -1,0 +1,197 @@
+<view class="block">
+	<view class="title">基础图标</view>
+	<view class="wrap">
+		<view class="inline">
+			<iny-icon
+			 name="move"
+			 size='28px'
+			 bind:click="onClick"
+			/>
+			<view class="name">move</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="add" size='28px' />
+			<view class="name">add</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="attention" size='28px' />
+			<view class="name">attention</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="info" size='28px' />
+			<view class="name">info</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="fold" size='28px' />
+			<view class="name">fold</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-add" size='28px' />
+			<view class="name">round-add</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round" size='28px' />
+			<view class="name">round</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="square" size='28px' />
+			<view class="name">square</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="square" size='28px' />
+			<view class="name">square-check</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="delete" size='28px' />
+			<view class="name">delete</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="cart" size='28px' />
+			<view class="name">cart</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="right" size='28px' />
+			<view class="name">right</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-right" size='28px' />
+			<view class="name">round-right</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="top" size='28px' />
+			<view class="name">top</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="question" size='28px' />
+			<view class="name">question</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="back" size='28px' />
+			<view class="name">back</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="like" size='28px' />
+			<view class="name">like</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="search" size='28px' />
+			<view class="name">search</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="close" size='28px' />
+			<view class="name">close</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-close" size='28px' />
+			<view class="name">round-close</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-check" size='28px' />
+			<view class="name">round-check</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="check" size='28px' />
+			<view class="name">check</view>
+		</view>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">实心图标</view>
+	<view class="wrap">
+		<view class="inline">
+			<iny-icon name="attention-f" size='28px' />
+			<view class="name iny-no-wrap">attention-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="service-f" size='28px' />
+			<view class="name iny-no-wrap">service-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="info-f" size='28px' />
+			<view class="name iny-no-wrap">info-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-add-f" size='28px' />
+			<view class="name iny-no-wrap">round-add-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="square-check-f" size='28px' />
+			<view class="name iny-no-wrap">square-check-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="home-f" size='28px' />
+			<view class="name iny-no-wrap">home-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="cart-f" size='28px' />
+			<view class="name iny-no-wrap">cart-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="delete-f" size='28px' />
+			<view class="name iny-no-wrap">delete-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="question-f" size='28px' />
+			<view class="name iny-no-wrap">question-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="like-f" size='28px' />
+			<view class="name iny-no-wrap">like-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-right-f" size='28px' />
+			<view class="name iny-no-wrap">round-right-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-close-f" size='28px' />
+			<view class="name iny-no-wrap">round-close-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="round-check-f" size='28px' />
+			<view class="name iny-no-wrap">round-check-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="location-f" size='28px' />
+			<view class="name iny-no-wrap">location-f</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="favor-f" size='28px' />
+			<view class="name">favor-f</view>
+		</view>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">其他图标</view>
+	<view class="wrap">
+		<view class="inline">
+			<iny-icon name="share" size='28px' />
+			<view class="name iny-no-wrap">share</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="more-android" size='28px' />
+			<view class="name iny-no-wrap">more-android</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="more" size='28px' />
+			<view class="name iny-no-wrap">more</view>
+		</view>
+		<view class="inline">
+			<iny-icon name="location" size='28px' />
+			<view class="name iny-no-wrap">location</view>
+		</view>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">图片图标</view>
+	<view class="wrap">
+		<view class="inline">
+			<iny-icon name="https://img.yzcdn.cn/vant/basic-0401.svg" size='28px' />
+			<view class="name">图片</view>
+		</view>
+	</view>
+</view>
+
+

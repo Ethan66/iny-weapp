@@ -1,0 +1,8 @@
+.load-wrap {
+  margin-left: 20px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border-radius: 4px;
+}

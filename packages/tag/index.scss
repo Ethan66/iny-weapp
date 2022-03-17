@@ -1,0 +1,95 @@
+@import '../common/index.scss';
+
+.iny-tag {
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: normal;
+
+  &--theme {
+    color: $color-button-text;
+    background-color: $color-theme;
+  }
+
+
+  &--theme-sub {
+    color: $color-button-text;
+    background-color: $color-theme-sub;
+  }
+
+  &--info {
+    color: $color-button-text;
+    background-color: $color-info;
+  }
+
+  &--success {
+    color: $color-button-text;
+    background-color: $color-success;
+  }
+
+  &--danger {
+    color: $color-button-text;
+    background-color: $color-danger;
+  }
+
+  &--warning {
+    color: $color-button-text;
+    background-color: $color-warning;
+  }
+
+  &--blank {
+    color: $color-button-text;
+    background-color: $color-dark-blank;
+  }
+
+  &--plain {
+    background-color: #fff;
+
+    &.iny-tag--round {
+      border-radius: 25px;
+      &::after {
+        border-radius: 25px;
+      }
+    }
+
+    &::after {
+      border-color: inherit;
+    }
+
+    &.iny-tag--theme {
+      color: $color-theme;
+    }
+
+    &.iny-tag--theme-sub {
+      color: $color-theme-sub;
+    }
+
+    &.iny-tag--success {
+      color: $color-success;
+    }
+
+    &.iny-tag--info {
+      color: $color-info;
+    }
+
+    &.iny-tag--danger {
+      color: $color-danger;
+    }
+
+    &.iny-tag--warning {
+      color: $color-warning;
+    }
+
+    &.iny-tag--blank {
+      color: $color-dark-blank;
+    }
+  }
+
+  &--round {
+    border-radius: 25px;
+  }
+
+  &--mark {
+    border-radius: 0 25px 25px 0;
+  }
+
+}

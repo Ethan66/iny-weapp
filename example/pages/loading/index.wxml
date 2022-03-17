@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="block">
+	<view class="title">circular</view>
+	<iny-loading color="#000" size="16" />
+	<iny-loading
+	 custom-class="load-wrap"
+	 color="white"
+	 size="16"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">spinner</view>
+	<iny-loading
+	 color="#333"
+	 size="16"
+	 type="spinner"
+	/>
+	<iny-loading
+	 custom-class="load-wrap"
+	 color="#fff"
+	 size="16"
+	 type="spinner"
+	/>
+</view>
+
+

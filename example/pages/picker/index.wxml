@@ -1,0 +1,77 @@
+<view class="title padding">基础用法</view>
+<iny-picker
+ title="基础用法"
+ columns="{{columns}}"
+ bind:change="onChange"
+/>
+
+<view class="title padding">默认选中值</view>
+<iny-picker
+ title="基础用法"
+ columns="{{columns}}"
+ value="{{[3]}}"
+ bind:change="onChange"
+/>
+
+<view class="title padding">展示头部</view>
+<iny-picker
+ show-bar
+ title="基础用法"
+ columns="{{columns}}"
+ value="{{[3]}}"
+ bind:change="onChange"
+ bind:cancel="onCancel"
+ bind:confirm="onConfirm"
+/>
+
+<view class="title padding">弹出picker</view>
+<iny-cell
+ title="城市"
+ label="选择城市"
+ bind:click="togglePopup"
+/>
+<iny-pop visible="{{popupVisible}}" position="bottom">
+	<iny-picker
+	 show-bar
+	 title="基础用法"
+	 columns="{{columns}}"
+	 value="{{[3]}}"
+	 bind:change="onChange"
+	 bind:cancel="onCancelPop"
+	 bind:confirm="onConfirmPop"
+	/>
+</iny-pop>
+
+<view class="title padding">禁用选项</view>
+<iny-picker
+ show-bar
+ title="基础用法"
+ columns="{{columns2}}"
+ value-key="name"
+ value="{{[3]}}"
+ bind:change="onChange2"
+ bind:cancel="onCancel"
+ bind:confirm="onConfirm"
+/>
+
+<view class="title padding">多级联动</view>
+<iny-picker
+ show-bar
+ columns="{{columns3}}"
+ value="{{[1]}}"
+ bind:change="onChange3"
+ bind:cancel="onCancel"
+ bind:confirm="onConfirm"
+/>
+
+<view class="title padding">加载中</view>
+<iny-picker
+ loading
+ columns="{{columns3}}"
+ value="{{[1]}}"
+ bind:change="onChange3"
+ bind:cancel="onCancel"
+ bind:confirm="onConfirm"
+/>
+
+

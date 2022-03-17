@@ -1,0 +1,26 @@
+<iny-mask
+ wx:if="{{ mask }}"
+ mask
+ visible="{{ visible }}"
+ z-index="{{ zIndex }}"
+ custom-style="{{ overlayStyle }}"
+ duration="{{ duration }}"
+ bind:click="onClickOverlay"
+/>
+<view
+ wx:if="{{ inited }}"
+ class="custom-class iny-popup {{ classes }} {{'iny-popup--' + position }} {{ round ? 'iny-popup--round' : ''}} {{ safeAreaBottom ? 'iny-popup--safe' : ''}} {{ safeAreaTop ? 'iny-popup--safe-top' : ''}}"
+ style="z-index: {{ zIndex }}; -webkit-transition-duration:{{ currentDuration }}ms; transition-duration:{{ currentDuration }}ms; {{ display ? '' : 'display: none;' }} {{ customStyle }}"
+ bind:transitionend="onTransitionEnd"
+>
+	<view
+	 class="iny-popup__close"
+	 wx:if="{{closeable}}"
+	 bind:tap="onClose"
+	>
+		<iny-icon size="16px" name="{{ icon }}" />
+	</view>
+	<slot/>
+</view>
+
+

@@ -1,0 +1,88 @@
+<view class="block">
+	<view class="title">简单使用</view>
+</view>
+
+<iny-collapse
+ value="{{value1}}"
+ bind:change="onChange"
+ data-key="1"
+>
+	<iny-collapse-item title="大田後生仔" name='1'>
+		做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人
+	</iny-collapse-item>
+
+	<iny-collapse-item title="野狼disco" name='2'>
+		全场动作必须跟我整齐划一 来左边儿 跟我一起画个龙 在你右边儿 画一道彩虹（走起） 来左边儿 跟我一起画彩虹
+	</iny-collapse-item>
+</iny-collapse>
+
+<view class="block">
+	<view class="title">禁用列</view>
+</view>
+
+<iny-collapse
+ value="{{value2}}"
+ bind:change="onChange"
+ data-key="2"
+>
+	<iny-collapse-item title="大田後生仔" name='1'>
+		做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人
+	</iny-collapse-item>
+
+	<iny-collapse-item title="野狼disco" name='2'>
+		全场动作必须跟我整齐划一 来左边儿 跟我一起画个龙 在你右边儿 画一道彩虹（走起） 来左边儿 跟我一起画彩虹
+	</iny-collapse-item>
+
+	<iny-collapse-item
+	 title="大田後生仔"
+	 name='3'
+	 disabled
+	>
+		做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人
+	</iny-collapse-item>
+</iny-collapse>
+
+<view class="block">
+	<view class="title">手风琴</view>
+</view>
+
+<iny-collapse
+ value="{{value3}}"
+ bind:change="onChange"
+ accordion
+ data-key="3"
+>
+	<iny-collapse-item title="大田後生仔" name='1'>
+		做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人
+	</iny-collapse-item>
+
+	<iny-collapse-item title="野狼disco" name='2'>
+		全场动作必须跟我整齐划一 来左边儿 跟我一起画个龙 在你右边儿 画一道彩虹（走起） 来左边儿 跟我一起画彩虹
+	</iny-collapse-item>
+</iny-collapse>
+
+<view class="block">
+	<view class="title">自定义</view>
+</view>
+
+<iny-collapse
+ value="{{value4}}"
+ bind:change="onChange"
+ accordion
+ data-key="4"
+>
+	<iny-collapse-item name='1' value="歌曲">
+		<view slot="title">大田後生仔</view>
+		做人一辈子 快乐没几天 一条大路分两边 随你要走哪一边 不怕不怕就不怕 我是年轻人
+	</iny-collapse-item>
+
+	<iny-collapse-item
+	 title="野狼disco"
+	 name='2'
+	 icon="check"
+	>
+		全场动作必须跟我整齐划一 来左边儿 跟我一起画个龙 在你右边儿 画一道彩虹（走起） 来左边儿 跟我一起画彩虹
+	</iny-collapse-item>
+</iny-collapse>
+
+

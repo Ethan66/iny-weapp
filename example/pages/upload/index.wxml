@@ -1,0 +1,85 @@
+<view class="block">
+	<view class="title">基础预览用法</view>
+	<iny-upload
+	 name="1"
+	 file-list="{{fileList1}}"
+	 bind:preview="onPreview"
+	 bind:upload="onUpload"
+	 bind:remove="onRemove"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">限制每次可选数量</view>
+	<iny-upload
+	 name="2"
+	 file-list="{{fileList2}}"
+	 count="1"
+	 bind:preview="onPreview"
+	 bind:upload="onUpload"
+	 bind:remove="onRemove"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">指定图片可选区域和是否压缩</view>
+	<iny-upload
+	 name="3"
+	 file-list="{{fileList3}}"
+	 source-type="{{['album']}}"
+	 size-type="{{['original']}}"
+	 bind:preview="onPreview"
+	 bind:upload="onUpload"
+	 bind:remove="onRemove"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">限制上传大小</view>
+	<iny-upload
+	 name="4"
+	 file-list="{{fileList4}}"
+	 max-size="1000"
+	 bind:preview="onPreview"
+	 bind:upload="onUpload"
+	 bind:remove="onRemove"
+	 bind:over="onOver"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">限制上传数量</view>
+	<iny-upload
+	 name="5"
+	 file-list="{{fileList5}}"
+	 max-count="2"
+	 bind:preview="onPreview"
+	 bind:upload="onUpload"
+	 bind:remove="onRemove"
+	 bind:over="onOver"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">上传前钩子函数</view>
+	<iny-upload
+	 name="5"
+	 file-list="{{fileList5}}"
+	 bind:upload="onUpload"
+	 bind:before-upload="onBeforeUpload"
+	 before-upload
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义上传样式</view>
+	<iny-upload
+	 name="6"
+	 use-slot
+	 bind:upload="onUpload"
+	>
+		<iny-button>上传图片</iny-button>
+	</iny-upload>
+</view>
+
+

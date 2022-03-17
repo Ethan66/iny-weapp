@@ -1,0 +1,18 @@
+<iny-transtion
+ name="slide-down"
+ visible="{{visible}}"
+ custom-class="iny-notify__container"
+ custom-style="z-index:{{zIndex}}"
+>
+
+	<view
+	 class="iny-notify iny-notify--{{type}}"
+	 style="background-color: {{background}}; color: {{color}};"
+	 bind:tap="onTap"
+	>
+		<view wx:if="{{safeAreaTop}}" class="iny-notify__safe-area" />
+		{{text}}
+	</view>
+</iny-transtion>
+
+

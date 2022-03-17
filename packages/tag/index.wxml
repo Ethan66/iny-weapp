@@ -1,0 +1,9 @@
+<view
+ bind:tap="onClick"
+ class="custom-class iny-tag iny-tag--{{type}} {{ round ? 'iny-tag--round' : ''}}  {{ plain ? 'iny-hairline iny-tag--plain': ''}} {{mark ? 'iny-tag--mark' : ''}}"
+ style="{{ color && !plain ? 'background-color: ' + color + ';' : '' }}{{ textColor || (color && plain) ? 'color: ' + (textColor || color) : '' }}; font-size:{{size}}"
+>
+	<slot/>
+</view>
+
+

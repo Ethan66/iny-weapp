@@ -1,0 +1,328 @@
+<view class="block">
+	<view class="title">按钮类型</view>
+	<view class="wrap">
+		<iny-button bind:click="buttonClick" inline>默认按钮</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="primary"
+		 openType='share'
+		 bind:openType="openTypeClick"
+		 inline
+		>兼容主要按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme"
+		 openType="getPhoneNumber"
+		 bind:getPhoneNumber="onGetUserPhone"
+		 inline
+		>主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme-sub"
+		 bind:click="buttonClick"
+		 inline
+		>二级主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="info"
+		 bind:click="buttonClick"
+		 inline
+		>信息按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="danger"
+		 bind:click="buttonClick"
+		 inline
+		>错误按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="warning"
+		 bind:click="buttonClick"
+		 inline
+		>警告按钮
+		</iny-button>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">朴素按钮</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 type="theme"
+		 bind:click="buttonClick"
+		 inline
+		 round
+		>主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 type="theme-sub"
+		 bind:click="buttonClick"
+		 inline
+		>二级主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 type="info"
+		 bind:click="buttonClick"
+		 inline
+		>信息按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 type="danger"
+		 bind:click="buttonClick"
+		 inline
+		>错误按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 type="warning"
+		 bind:click="buttonClick"
+		 inline
+		>警告按钮
+		</iny-button>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">1像素边框按钮</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 hairline
+		 type="theme"
+		 bind:click="buttonClick"
+		 inline
+		 round
+		>主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 hairline
+		 size="large"
+		 type="theme-sub"
+		 bind:click="buttonClick"
+		 inline
+		 round
+		>二级主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 hairline
+		 size="small"
+		 type="primary"
+		 bind:click="buttonClick"
+		 inline
+		 round
+		>主要按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 hairline
+		 size="mini"
+		 round
+		 type="danger"
+		 bind:click="buttonClick"
+		 inline
+		>错误按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 plain
+		 hairline
+		 type="warning"
+		 bind:click="buttonClick"
+		 inline
+		>警告按钮
+		</iny-button>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">禁用按钮</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme"
+		 disabled
+		 bind:click="buttonClick"
+		 inline
+		>主题按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme-sub"
+		 disabled
+		 bind:click="buttonClick"
+		 inline
+		>二级主题按钮
+		</iny-button>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">加载按钮</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme"
+		 loading
+		 loadingType='spinner'
+		 bind:click="buttonClick"
+		 inline
+		></iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme-sub"
+		 loading
+		 loadingSize='18'
+		 loadingText="加载中"
+		 bind:click="buttonClick"
+		 inline
+		></iny-button>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">按钮形状</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme"
+		 bind:click="buttonClick"
+		 inline
+		>方形按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 type="info"
+		 round
+		 bind:click="buttonClick"
+		 inline
+		>圆形按钮
+		</iny-button>
+	</view>
+</view>
+
+<view class="block">
+	<view class="title">行块按钮</view>
+	<view class="wrap">
+		<iny-button
+		 type="theme"
+		 bind:click="buttonClick"
+		 inline
+		>行内按钮
+		</iny-button>
+	</view>
+	<iny-button type="info" bind:click="buttonClick">块级按钮</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">按钮尺寸</view>
+	<view class="wrap">
+		<iny-button
+		 type="info"
+		 inline
+		 bind:click="buttonClick"
+		>普通按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 size="small"
+		 type="info"
+		 inline
+		 bind:click="buttonClick"
+		>小号按钮
+		</iny-button>
+	</view>
+
+	<view class="wrap">
+		<iny-button
+		 size="small"
+		 type="info"
+		 inline
+		 round
+		 bind:click="buttonClick"
+		>小号按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 size="mini"
+		 type="info"
+		 inline
+		 bind:click="buttonClick"
+		>迷你按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 size="mini"
+		 type="info"
+		 inline
+		 round
+		 bind:click="buttonClick"
+		>迷你按钮
+		</iny-button>
+	</view>
+	<iny-button
+	 type="theme"
+	 size="large"
+	 bind:click="buttonClick"
+	>大号按钮
+	</iny-button>
+</view>
+
+<view class="block">
+	<view class="title">自定义颜色</view>
+	<view class="wrap">
+		<iny-button
+		 color="blue"
+		 type="info"
+		 inline
+		 bind:click="buttonClick"
+		>普通按钮
+		</iny-button>
+	</view>
+	<view class="wrap">
+		<iny-button
+		 color="#786559"
+		 plain
+		 type="info"
+		 inline
+		 bind:click="buttonClick"
+		>普通按钮
+		</iny-button>
+	</view>
+</view>
+
+

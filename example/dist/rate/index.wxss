@@ -1,0 +1,1 @@
+.iny-rate{display:flex;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.iny-rate__item{position:relative}.iny-rate__icon--half{position:absolute;top:0;left:0;width:.5em;overflow:hidden}

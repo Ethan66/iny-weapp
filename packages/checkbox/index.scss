@@ -1,0 +1,67 @@
+@import '../common/styles/var.scss';
+@import '../common/styles/mixin.scss';
+
+.iny-checkbox {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__icon-wrap,
+  &__label {
+    line-height: $checkbox-size;
+    @include extend-click();
+  }
+
+  &__icon-wrap {
+    flex: none;
+  }
+
+  &__icon {
+    display: block;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    font-size: 13px;
+    color: transparent;
+    text-align: center;
+    border: 1px solid $checkbox-border-color;
+    box-sizing: border-box;
+    transition: all $checkbox-transition-duration;
+
+    &--round {
+      border-radius: 100%;
+    }
+
+    &--checked {
+      color: #fff;
+      background-color: $checkbox-checked-icon-color;
+      border-color: $checkbox-checked-icon-color;
+    }
+
+    &--disabled {
+      background-color: $checkbox-disabled-background-color;
+      border-color: $checkbox-disabled-icon-color;
+    }
+
+    &--disabled {
+      &.iny-checkbox__icon--checked {
+        color: $checkbox-disabled-icon-color;
+      }
+    }
+  }
+
+  &__label {
+    margin-left: $checkbox-label-margin;
+    color: $checkbox-label-color;
+    word-break: break-all;
+    font-size: 14px;
+
+    &--left {
+      float: left;
+      margin: 0 $checkbox-label-margin 0 0;
+    }
+
+    &--disabled {
+      color: $checkbox-disabled-label-color;
+    }
+  }
+}

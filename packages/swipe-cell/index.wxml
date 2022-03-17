@@ -1,0 +1,33 @@
+<view
+ class="iny-swipe-cell"
+ data-key="cell"
+ catchtap="onClick"
+ bindtouchstart="onTouchStart"
+ catchtouchmove="{{ catchMove ? 'noop' : '' }}"
+ capture-bind:touchmove="onTouchMove"
+ catchtouchend="onTouchEnd"
+ catchtouchcancel="onTouchEnd"
+>
+	<view style="{{wrapStyle}}">
+		<view
+		 class="iny-swipe-cell__left"
+		 style="width: {{leftWidth}}"
+		 data-key="left"
+		 catch:tap="onClick"
+		>
+			<slot name="left" />
+		</view>
+		<slot/>
+
+		<view
+		 class="iny-swipe-cell__right"
+		 style="width: {{rightWidth}}"
+		 data-key="right"
+		 catch:tap="onClick"
+		>
+			<slot name="right" />
+		</view>
+	</view>
+</view>
+
+

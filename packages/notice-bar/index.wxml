@@ -1,0 +1,30 @@
+<view
+ class="custom-class iny-notice-bar {{rightIcon ? 'iny-notice-bar--with-icon' : ''}} {{wrapable ? 'iny-notice-bar--wrapable' : '' }}"
+ style="color: {{color}}; background-color: {{backgroundColor}}"
+ bind:tap="onClick"
+>
+	<iny-icon
+	 wx:if="{{ leftIcon }}"
+	 size="14px"
+	 name="{{ leftIcon }}"
+	 class="iny-notice-bar__left-icon"
+	/>
+	<slot wx:else name="left-icon" />
+
+	<view class="iny-notice-bar__wrap">
+		<view class="iny-notice-bar__content {{ scrollable ? 'iny-notice-bar__content--scroll' : '' }} {{ !scrollable && !wrapable ? 'iny-no-wrap' : ''}}" animation="{{animationData}}">
+			{{ text }}
+		</view>
+	</view>
+
+	<iny-icon
+	 wx:if="{{ rightIcon }}"
+	 size="14px"
+	 name="{{ rightIcon }}"
+	 class="iny-notice-bar__right-icon"
+	 style="background: {{backgroundColor}}"
+	/>
+	<slot wx:else name="right-icon" />
+</view>
+
+

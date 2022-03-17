@@ -1,0 +1,20 @@
+<view
+ class="iny-picker-column custom-class"
+ style="height: {{columnHeight * visibleColumnCount}}px;"
+ bind:touchstart="onTouchStart"
+ catch:touchmove="onTouchMove"
+ bind:touchend="onTouchEnd"
+>
+	<view style="{{columnStyle}}">
+		<view
+		 wx:for="{{list}}"
+		 wx:key="{{index}}"
+		 data-index="{{index}}"
+		 style="height: {{columnHeight}}px"
+		 class="iny-picker-column__item iny-no-wrap {{item && item.disabled ? 'iny-picker-column__item--disabled' : ''}} {{ index === currentIndex ? 'iny-picker-column__item--active active-class' : ''}}"
+		>{{ valueKey ? item[valueKey] : item}}
+		</view>
+	</view>
+</view>
+
+

@@ -1,0 +1,54 @@
+@import '../common/index.scss';
+
+.iny-modal {
+  top: 45% !important;
+  width: 85%;
+  overflow: hidden;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+
+  &__header {
+    padding-top: 25px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: $color-title;
+  }
+
+  &__text {
+    max-height: 60vh;
+    padding: 20px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+    color: $color-text;
+
+    &--no-title {
+      padding-top: 12px;
+      color: $color-title;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__footer {
+    display: flex;
+  }
+
+  &__button {
+    flex: 1;
+  }
+
+  &__cancel {
+    border: 0 !important;
+  }
+}

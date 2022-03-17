@@ -1,0 +1,10 @@
+<wxs module="utils" src="../wxs/utils.wxs" />
+
+<view wx:if="{{visible}}" class="custom-class iny-countdown">
+	<block wx:for="{{timeList}}" wx:key="{{index}}">
+		<text wx:if="{{utils.isNumber(item)}}" class="item-class iny-countdown__item">{{ item }}</text>
+		<text wx:elif="{{item}}" class="separator-class iny-countdown__separator"> {{ item }}</text>
+	</block>
+</view>
+
+

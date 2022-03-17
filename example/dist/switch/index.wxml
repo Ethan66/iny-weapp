@@ -1,0 +1,9 @@
+<view
+ class="custom-class iny-switch {{ value ? 'iny-switch--on' : ''}} {{ disabled ? 'iny-switch--disabled' : ''}}"
+ style="font-size: {{size}}; {{(value ? activeColor : inactiveColor) ? 'background-color:' + (value ? activeColor : inactiveColor) : ''}}"
+ bindtap="onChange"
+>
+	<view class="iny-switch__node node-class" />
+</view>
+
+

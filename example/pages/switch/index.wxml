@@ -1,0 +1,43 @@
+<view class="block">
+	<view class="title">简单使用</view>
+	<iny-switch checked="{{checked}}" bind:change="onChange" />
+</view>
+
+<view class="block">
+	<view class="title">禁用状态</view>
+	<iny-switch
+	 checked="{{checked}}"
+	 disabled
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">异步更新</view>
+	<iny-switch
+	 checked="{{checkedAsync}}"
+	 async
+	 bind:change="onChangeAsync"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义大小</view>
+	<iny-switch
+	 checked="{{checked}}"
+	 size="30px"
+	 bind:change="onChange"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义颜色</view>
+	<iny-switch
+	 checked="{{checked}}"
+	 active-color="green"
+	 inactive-color="blue"
+	 bind:change="onChange"
+	/>
+</view>
+
+

@@ -1,0 +1,195 @@
+@import '../common/index.scss';
+
+.iny-button {
+  position: relative;
+  height: 30px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: $color-blank;
+    border: inherit;
+    border-color: $color-blank;
+    border-radius: inherit;
+    content: ' ';
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    border-width: 0;
+  }
+
+  &--active::before {
+    opacity: 0.15;
+  }
+
+  &--unclickable::after {
+    display: none;
+  }
+
+  &--default {
+    color: $color-title;
+    background-color: #fff;
+    border: 1px solid $color-border;
+  }
+
+  &--theme {
+    color: $color-button-text;
+    background-color: $color-theme;
+    border: 1px solid $color-theme;
+  }
+
+  &--primary {
+    color: $color-text;
+    background-color: #fff;
+    border: 1px solid $color-text;
+  }
+
+  &--theme-sub {
+    color: $color-button-text;
+    background-color: $color-theme-sub;
+  }
+
+  &--info {
+    color: $color-button-text;
+    background-color: $color-info;
+    border: 1px solid $color-info;
+  }
+
+  &--success {
+    color: $color-button-text;
+    background-color: $color-success;
+    border: 1px solid $color-success;
+  }
+
+  &--danger {
+    color: $color-button-text;
+    background-color: $color-danger;
+    border: 1px solid $color-danger;
+  }
+
+  &--warning {
+    color: $color-button-text;
+    background-color: $color-warning;
+    border: 1px solid $color-warning;
+  }
+
+  &--plain {
+    background-color: #fff;
+
+    &.iny-button--theme {
+      color: $color-theme;
+    }
+
+    &.iny-button--theme-sub {
+      color: $color-theme-sub;
+    }
+
+    &.iny-button--primary {
+      color: $color-text;
+    }
+
+    &.iny-button--success {
+      color: $color-success;
+    }
+
+    &.iny-button--info {
+      color: $color-info;
+    }
+
+    &.iny-button--danger {
+      color: $color-danger;
+    }
+
+    &.iny-button--warning {
+      color: $color-warning;
+    }
+  }
+
+  &--large {
+    padding: 0 16px;
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+  }
+
+  &--normal {
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  &--small {
+    height: 24px;
+    min-width: 60px;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  &--mini {
+    display: inline-block;
+    padding: 0 5px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+
+  &--inline {
+    display: inline-block;
+  }
+
+  &--round {
+    border-radius: $btn-radius;
+
+    &.iny-button--hairline::after {
+      border-radius: $btn-radius * 2;
+    }
+  }
+
+
+  &--disabled {
+    background: $color-disabled-text;
+    color: $color-text;
+    border-color: $color-disabled-text;
+
+    &.iny-button--active::before {
+      opacity: 0;
+    }
+  }
+
+  &__text {
+    display: inline;
+  }
+
+  &__loading-text {
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--hairline {
+    border-width: 0;
+    padding-top: 1px;
+    
+    
+    &::after {
+      border-width: 1px;
+      border-color: inherit;
+      border-radius: 0;
+    }
+  }
+}

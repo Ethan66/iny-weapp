@@ -1,0 +1,5 @@
+<view class="custom-class iny-collapse {{ border ? 'iny-hairline--top-bottom' : '' }}">
+	<slot/>
+</view>
+
+

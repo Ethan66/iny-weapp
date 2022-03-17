@@ -1,0 +1,55 @@
+<view class="iny-upload">
+	<view class="iny-upload__wrap">
+
+		<block wx:if="{{ previewImage }}">
+			<view
+			 wx:for="{{ fileList  }}"
+			 wx:key="{{ index }}"
+			 class="iny-upload__preview"
+			>
+				<image
+				 mode="{{ mode }}"
+				 src="{{ item.url }}"
+				 alt="{{ item.name || ('图片' + index) }}"
+				 class="iny-upload__preview-image"
+				 style="width: {{ previewSize }}px; height: {{ previewSize }}px;"
+				 data-url="{{ item.url }}"
+				 data-index="{{ index }}"
+				 bind:tap="onPreviewImage"
+				/>
+
+				<iny-icon
+				 name="round-close-f"
+				 size="18px"
+				 class="iny-upload__preview-delete"
+				 bind:tap="onRemoveImage"
+				 data-index="{{ index }}"
+				/>
+			</view>
+		</block>
+
+		<block wx:if="{{ fileList.length < maxCount }}">
+			<block wx:if="{{ useSlot }}">
+				<view class="iny-upload__slot" bind:tap="onUpload">
+					<slot/>
+				</view>
+			</block>
+			<block wx:else>
+				<view
+				 class="iny-upload__upload"
+				 style="width: {{ previewSize }}px; height: {{ previewSize }}px;"
+				 bind:tap="onUpload"
+				>
+					<iny-icon
+					 name="add"
+					 size='26px'
+					 class="iny-upload__upload-icon"
+					/>
+					<text wx:if="{{ uploadText }}" class="iny-upload__upload-text">{{ uploadText }}</text>
+				</view>
+			</block>
+		</block>
+	</view>
+</view>
+
+

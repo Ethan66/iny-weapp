@@ -1,0 +1,28 @@
+<view class="custom-class iny-input-number">
+	<view
+	 class="decrease-class iny-input-number__decrease {{ disabled || num <= min ? 'iny-input-number__decrease--disabled' : ''}}"
+	 hover-class="iny-input-number__decrease--hover"
+	 hover-stay-time="70"
+	 bind:tap="onDecrease"
+	>
+		<iny-icon class="iny-input-number__icon" name="move" />
+	</view>
+	<input
+	 class="input-class iny-input-number__input {{disabled ? 'iny-input-number__input--disabled' : ''}}"
+	 style="width: {{inputWidth ? inputWidth : ''}}"
+	 disabled="{{disabled || disabledInput}}"
+	 value="{{num}}"
+	 bindinput="onInput"
+	 type="digit"
+	/>
+	<view
+	 class="increase-class iny-input-number__increase {{ disabled || num >= max ? 'iny-input-number__increase--disabled' : ''}}"
+	 hover-class="iny-input-number__increase--hover"
+	 hover-stay-time="70"
+	 bind:tap="onIncrease"
+	>
+		<iny-icon class="iny-input-number__icon" name="add" />
+	</view>
+</view>
+
+

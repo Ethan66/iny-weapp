@@ -1,0 +1,12 @@
+@import '../common/index.scss';
+
+.iny-countdown {
+  display: inline-block;
+  font-size: 14px;
+  color: $color-title;
+  line-height: 1.2;
+
+  &__item, &__separator {
+    display: inline-block;
+  }
+}

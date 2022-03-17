@@ -1,0 +1,1 @@
+.iny-picker-column{overflow:hidden;text-align:center;font-size:16px;color:#999}.iny-picker-column__item{padding:0 5px}.iny-picker-column__item--active{font-weight:500;color:#333}.iny-picker-column__item--disabled{opacity:.4}

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "iny-pop": "../popup/index",
+    "iny-checkbox": "../checkbox/index",
+    "iny-checkbox-group": "../checkbox-group/index",
+    "iny-button": "../button/index"
+  }
+}

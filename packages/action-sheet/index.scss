@@ -1,0 +1,57 @@
+@import '../common/index.scss';
+
+.iny-action-sheet {
+  max-height: 90%;
+
+  &__header {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    font-size: $font-title;
+    color: $color-title;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: $color-title;
+    border-radius: 0;
+
+    &--hover {
+      background-color: $color-active;
+    }
+
+    &--disabled {
+      color: $color-disabled;
+
+      &.iny-action-sheet__item--hover {
+        background: #fff;
+      }
+    }
+
+  }
+
+  &__title {
+    flex: 1;
+  }
+
+  &__footer {
+    height: 50px;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &--bottom {
+    padding-bottom: 50px;
+  }
+}

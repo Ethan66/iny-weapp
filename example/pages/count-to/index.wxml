@@ -1,0 +1,88 @@
+<view class="block">
+	<view class="title">基础用法</view>
+	<iny-count-to
+	 start="{{100}}"
+	 end="{{1000}}"
+	 bind:finish="finished"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">指定过渡时间</view>
+	<iny-count-to
+	 start="{{100}}"
+	 end="{{1000}}"
+	 duration="{{2000}}"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">指定小数位</view>
+	<iny-count-to
+	 start="{{100}}"
+	 end="{{1000}}"
+	 decimal="{{2}}"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">前缀和后缀</view>
+	<iny-count-to
+	 start="{{100}}"
+	 end="{{1000}}"
+	 prefix="¥"
+	 suffix="rmb"
+	 decimal="{{2}}"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义UI</view>
+	<iny-count-to
+	 start="{{100}}"
+	 end="{{1000}}"
+	 prefix="¥"
+	 suffix="rmb"
+	 decimal="{{2}}"
+	 custom-class="count-to"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">手动控制</view>
+	<view class="padding">
+		<iny-count-to
+		 start="{{100}}"
+		 end="{{1000}}"
+		 prefix="¥"
+		 suffix="rmb"
+		 decimal="{{2}}"
+		 auto-start="{{false}}"
+		 custom-class="count-to"
+		 class="control-count-to"
+		/>
+	</view>
+	<iny-button
+	 type="theme"
+	 size="small"
+	 inline
+	 bind:click="start"
+	>开始
+	</iny-button>
+	<iny-button
+	 type="info"
+	 size="small"
+	 inline
+	 bind:click="pause"
+	>暂停
+	</iny-button>
+	<iny-button
+	 type="success"
+	 size="small"
+	 inline
+	 bind:click="reset"
+	>重置
+	</iny-button>
+</view>
+
+

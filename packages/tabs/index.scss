@@ -1,0 +1,113 @@
+@import '../common/index.scss';
+
+$tabs-line-height: 44px;
+$tabs-card-height: 30px;
+
+.iny-tabs {
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+
+  &__wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background: #fff;
+
+    &--scrollable {
+      .iny-tabs__title {
+        flex: 0 0 22%;
+      }
+    }
+  }
+
+
+  &__scroll--card {
+    border-radius: 2px;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 3px;
+    border-radius: 3px;
+    background: $color-theme;
+  }
+
+  &--line {
+    padding-top: $tabs-line-height;
+
+    .iny-tabs__wrap {
+      height: $tabs-line-height;
+    }
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+
+    &--line {
+      height: 100%;
+    }
+
+    &--card {
+      height: $tabs-card-height;
+
+      .iny-tabs__title {
+        color: $color-theme;
+        line-height: $tabs-card-height;
+        border: 1px solid $color-theme;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &.iny-tabs__title--active {
+          color: $color-theme-text;
+          background-color: $color-theme;
+        }
+      }
+    }
+  }
+
+  &--card {
+    padding-top: $tabs-card-height;
+
+    .iny-tabs__wrap {
+      height: $tabs-card-height;
+    }
+  }
+
+  &__title {
+    position: relative;
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 0; /* hack for flex ellipsis */
+    padding: 0 5px;
+    font-size: 14px;
+    text-align: center;
+    color: $color-gray;
+    line-height: $tabs-line-height;
+
+    &--active {
+      font-weight: 500;
+      color: $color-title;
+    }
+
+    &--disabled {
+      font-weight: normal;
+      color: $color-disabled;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__track {
+    position: relative;
+  }
+}

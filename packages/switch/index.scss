@@ -1,0 +1,39 @@
+@import '../common/styles/var.scss';
+
+.iny-switch {
+  display: inline-block;
+  position: relative;
+  width: $switch-width;
+  height: $switch-height;
+  border: $switch-border;
+  border-radius: $switch-node-size;
+  box-sizing: content-box;
+  background-color: $switch-background-color;
+  transition: background-color $switch-transition-duration;
+
+  &__node {
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 100%;
+    width: $switch-node-size;
+    height: $switch-node-size;
+    z-index: $switch-node-z-index;
+    transition: $switch-transition-duration;
+    box-shadow: $switch-node-box-shadow;
+    background-color: $switch-node-background-color;
+  }
+
+
+  &--on {
+    background-color: $switch-on-background-color;
+
+    .iny-switch__node {
+      transform: translateX($switch-width - $switch-node-size);
+    }
+  }
+
+  &--disabled {
+    opacity: $switch-disabled-opacity;
+  }
+}

@@ -1,0 +1,8 @@
+<view wx:if="{{ title }}" class="iny-cell-group__title">
+	{{ title }}
+</view>
+<view class="custom-class iny-cell-group {{ border ? 'iny-hairline--top-bottom' : '' }}">
+	<slot/>
+</view>
+
+

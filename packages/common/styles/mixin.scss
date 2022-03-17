@@ -1,0 +1,61 @@
+// 单行超出不换行
+@mixin no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 多行超出不换行
+@mixin more-no-wrap ($line) {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+// 扩大点击区域
+@mixin extend-click() {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
+
+// 1 像素基础
+@mixin hairline-base() {
+  position: absolute;
+  box-sizing: border-box;
+  transform-origin: center;
+  content: ' ';
+  pointer-events: none;
+}
+
+// 1 像素可传入边框颜色
+@mixin hairline($border-color) {
+  @include hairline-base();
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid $border-color;
+  transform: scale(0.5);
+}
+
+// 底边 1 像素可传入边框颜色，left 位置
+@mixin hairline-bottom($border-color, $left: 0) {
+  @include hairline-base();
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: $left;
+  border-bottom: 1px solid $border-color;
+  transform: scaleY(0.5);
+}

@@ -1,0 +1,84 @@
+<view class="title padding">简单使用</view>
+<iny-cell title="单元格" value="￥10.20" />
+<iny-cell
+ title="有箭头"
+ value="￥10.20"
+ isLink
+></iny-cell>
+<iny-cell
+ title="可以跳转"
+ value="￥10.20"
+ isLink
+ url="/pages/button/index"
+/>
+<iny-cell
+ title="自定义跳转方式"
+ value="￥10.20"
+ isLink
+ url="/pages/button/index"
+ linkType="navigateTo"
+/>
+<iny-cell
+ title="使用Label"
+ label="Lable内容"
+ value="￥10.20"
+ border="{{ false }}"
+/>
+
+<iny-cell-group title="cell group">
+	<iny-cell
+	 title="单元格"
+	 value="内容"
+	 border
+	/>
+	<iny-cell
+	 title="单元格"
+	 value="内容"
+	 label="描述信息"
+	/>
+</iny-cell-group>
+
+<view class="title padding">使用icon</view>
+<iny-cell
+ title="系统icon"
+ icon="favor"
+ value="￥10.20"
+/>
+
+<view class="title padding">使用slot</view>
+
+<iny-cell value="￥10.20" border>
+	<view class="title-slot" slot="title">slot title</view>
+</iny-cell>
+
+<iny-cell title="slot value" border>
+	<view class="value-slot">slot value</view>
+</iny-cell>
+
+<iny-cell title="slot label" value="value">
+	<view class="label-slot" slot="label">----slot label</view>
+</iny-cell>
+
+<view class="title padding">使用自定义样式</view>
+
+<iny-cell
+ title-class="iny-color-theme"
+ title="自定义title样式"
+ value="自定义title样式"
+ border
+></iny-cell>
+
+<iny-cell
+ value-class="custom-value"
+ title="自定义value样式"
+ value="自定义value样式"
+/>
+
+<iny-cell
+ label-class="custom-value"
+ title="自定义Label样式"
+ value="自定义Label样式"
+ label="Label"
+/>
+
+

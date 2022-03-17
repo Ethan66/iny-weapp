@@ -1,0 +1,11 @@
+.item-class {
+  margin: 0 2px;
+  width: 25px;
+  text-align: center;
+  background: #e4393c;
+  color: #fff;
+}
+.separator-class {
+  color: blue;
+  font-weight: 500;
+}

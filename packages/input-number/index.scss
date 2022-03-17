@@ -1,0 +1,59 @@
+@import '../common/styles/var.scss';
+
+
+.iny-input-number {
+  display: flex;
+  user-select: none;
+
+  &__decrease, &__increase {
+    text-align: center;
+    line-height: 20px;
+    width: 25px;
+    height: 20px;
+    background: #f0f0f0;
+    color: $color-gray;
+    &--disabled {
+      background:#f9f9f9;
+
+      .iny-input-number__icon {
+
+        color: $color-disabled;
+      }
+    }
+
+    &--hover {
+      background: $color-desc;
+    }
+
+  }
+
+  &__decrease {
+    border-radius: 1px;
+  }
+
+  &__increase {
+    border-radius: 1px;
+  }
+
+  &__input {
+    margin: 0 1px;
+    text-align: center;
+    width: 35px;
+    height: 20px;
+    min-height: 20px;
+    font-size: 14px;
+    background: #f0f0f0;
+
+    color: $color-title;
+
+    &--disabled {
+      background:#f9f9f9;
+      color: $color-disabled;
+    }
+  }
+
+  &__icon {
+    color: $color-gray;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,52 @@
+<iny-pop
+ custom-class="iny-action-sheet"
+ visible="{{visible}}"
+ mask="{{mask}}"
+ z-index="{{zIndex}}"
+ round="{{round}}"
+ closeable="{{!!title}}"
+ icon="{{icon}}"
+ position="bottom"
+ close-on-click-mask="{{closeOnClickMask}}"
+ safe-area-bottom="{{safeAreaBottom}}"
+ bind:close="onClose"
+ custom-style="min-height: {{minHeight}};"
+>
+	<view wx:if="{{title}}" class="iny-action-sheet__header iny-hairline--bottom">{{title}}
+	</view>
+	<iny-checkbox-group
+	 value="{{checkbox}}"
+	 max="{{max}}"
+	 bind:change="onChange"
+	>
+		<button
+		 class="iny-action-sheet__item iny-hairline--bottom {{ item.disabled ? 'iny-action-sheet__item--disabled' : ''}}"
+		 wx:for="{{actions}}"
+		 wx:key="{{index}}"
+		 data-index="{{index}}"
+		 open-type="{{item.openType}}"
+		 hover-class="iny-action-sheet__item--hover"
+		 bindtap="onSelect"
+		>
+			<view class="iny-action-sheet__title" style="text-align: {{align}};">{{item.title}}
+			</view>
+			<iny-checkbox
+			 wx:if="{{visibleCheckbox}}"
+			 disabled="{{item.disabled}}"
+			 name="{{item.name || item.title}}"
+			 label-class="iny-action-sheet__checkbox"
+			/>
+		</button>
+	</iny-checkbox-group>
+
+	<view class="iny-action-sheet__footer" wx:if="{{visibleCheckbox}}">
+		<iny-button
+		 class="iny-action-sheet__button"
+		 type="theme"
+		 bind:click="onConfirm"
+		>{{footerText}}
+		</iny-button>
+	</view>
+</iny-pop>
+
+

@@ -1,0 +1,10 @@
+<iny-transition
+ visible="{{ visible }}"
+ custom-class="iny-mask {{mask ? 'iny-mask--active' : ''}}"
+ custom-style="z-index: {{ zIndex }}; {{ color ? 'background-color:' + color + ';' : ''}} {{ customStyle }}"
+ duration="{{ duration }}"
+ bind:tap="onClick"
+ catch:touchmove="noop"
+/>
+
+

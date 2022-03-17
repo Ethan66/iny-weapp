@@ -1,0 +1,66 @@
+<view class="block">
+	<view class="title">简单使用</view>
+	<iny-input-number
+	 value="{{value}}"
+	 bind:change="onChange"
+	 bind:decrease="onDecrease"
+	 bind:increase="onIncrease"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">指定计数器步长</view>
+	<iny-input-number
+	 value="{{value}}"
+	 step="3"
+	 bind:change="onChange"
+	 bind:decrease="onDecrease"
+	 bind:increase="onIncrease"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">限制输入范围</view>
+	<iny-input-number
+	 min="1"
+	 max="10"
+	 value="{{value}}"
+	 step="3"
+	 bind:change="onChange"
+	 bind:decrease="onDecrease"
+	 bind:increase="onIncrease"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">禁用状态</view>
+	<iny-input-number
+	 disabled
+	 value="{{value}}"
+	 bind:change="onChange"
+	 bind:decrease="onDecrease"
+	 bind:increase="onIncrease"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">自定义宽度</view>
+	<iny-input-number
+	 input-width="50px"
+	 value="{{value}}"
+	 bind:change="onChange"
+	 bind:decrease="onDecrease"
+	 bind:increase="onIncrease"
+	/>
+</view>
+
+<view class="block">
+	<view class="title">异步改变数据</view>
+	<iny-input-number
+	 async
+	 value="{{valueAsync}}"
+	 bind:change="onChangeAsync"
+	/>
+</view>
+
+
